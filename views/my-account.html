@@ -587,6 +587,13 @@
                 success: function (data) {
                     console.log(data[0]);
                     // console.log(data.Last_Name);
+                    if(data[0].First_Name == null){
+                        data[0].First_Name = "NoSet!"
+                    }
+                    if(data[0].Last_Name == null){
+                        data[0].Last_Name = "NoSet!"
+                    }
+
                     let html = "";
                     html += "<p>Hello, <strong>";
                     html += data[0].First_Name + " " + data[0].Last_Name;
