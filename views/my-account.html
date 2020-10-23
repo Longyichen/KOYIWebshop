@@ -1,0 +1,684 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>My Account</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/line-awesome.css">
+    <link rel="stylesheet" href="assets/css/vendor/themify.css">
+    <!-- othres CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.css">
+    <link rel="stylesheet" href="assets/css/plugins/owl-carousel.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/additional.js"></script>
+</head>
+
+<body onload="redirectLoginCheck();">
+    <div class="main-wrapper">
+        <header class="header-area transparent-bar sticky-bar pt-10">
+            <div class="main-header-wrap">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 col-lg-3">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/images/logo/logo-1.png" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-6">
+                            <div class="main-menu menu-common-style menu-lh-1 menu-margin-4 menu-font-3 ml-20 menu-others-page">
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="shop.html">Shop</a></li>
+                                        <li><a href="cart.html">Cart</a></li>
+                                        <li><a href="about-us.html">About Us </a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="header-right-wrap mt-10">
+                                <div class="header-login ml-40">
+                                    <a  onclick = "loginCheck()"><i class="la la-user"></i></a>
+                                </div>
+                                <div class="cart-wrap common-style ml-35">
+                                    <button class="cart-active cart-3">
+                                        <span class="mini-cart-price" id="mini-cart-price">$0</span>
+                                        <i class="la la-shopping-cart"></i>
+                                    </button>
+                                    <div class="shopping-cart-content">
+                                        <div class="shopping-cart-top">
+                                            <h4>Your Cart</h4>
+                                            <a class="cart-close" href="#"><i class="la la-close"></i></a>
+                                        </div>
+                                        <ul id="shopping-cart-list">
+<!--                                            <li class="single-shopping-cart">-->
+<!--                                                <div class="shopping-cart-img">-->
+<!--                                                    <a href="#"><img alt="" src="assets/images/cart/cart-1.jpg"></a>-->
+<!--                                                    <div class="item-close">-->
+<!--                                                        <a href="#"><i class="sli sli-close"></i></a>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="shopping-cart-title">-->
+<!--                                                    <h4><a href="#">Golden Easy Spot Chair.</a></h4>-->
+<!--                                                    <span>$99.00</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="shopping-cart-delete">-->
+<!--                                                    <a href="#"><i class="la la-trash"></i></a>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="single-shopping-cart">-->
+<!--                                                <div class="shopping-cart-img">-->
+<!--                                                    <a href="#"><img alt="" src="assets/images/cart/cart-2.jpg"></a>-->
+<!--                                                    <div class="item-close">-->
+<!--                                                        <a href="#"><i class="sli sli-close"></i></a>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="shopping-cart-title">-->
+<!--                                                    <h4><a href="#">Golden Easy Spot Chair.</a></h4>-->
+<!--                                                    <span>$99.00</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="shopping-cart-delete">-->
+<!--                                                    <a href="#"><i class="la la-trash"></i></a>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            <li class="single-shopping-cart">-->
+<!--                                                <div class="shopping-cart-img">-->
+<!--                                                    <a href="#"><img alt="" src="assets/images/cart/cart-3.jpg"></a>-->
+<!--                                                    <div class="item-close">-->
+<!--                                                        <a href="#"><i class="sli sli-close"></i></a>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="shopping-cart-title">-->
+<!--                                                    <h4><a href="#">Golden Easy Spot Chair.</a></h4>-->
+<!--                                                    <span>$99.00</span>-->
+<!--                                                </div>-->
+<!--                                                <div class="shopping-cart-delete">-->
+<!--                                                    <a href="#"><i class="la la-trash"></i></a>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+                                        </ul>
+                                        <div class="shopping-cart-bottom">
+                                            <div class="shopping-cart-total">
+                                                <h4>Subtotal <span class="shop-total">$290.00</span></h4>
+                                            </div>
+                                            <div class="shopping-cart-btn btn-hover default-btn text-center">
+                                                <a class="black-color" href="checkout.html">Continue to Checkout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- main-search start -->
+                <div class="main-search-active">
+                    <div class="sidebar-search-icon">
+                        <button class="search-close"><span class="la la-close"></span></button>
+                    </div>
+                    <div class="sidebar-search-input">
+                        <form>
+                            <div class="form-search">
+                                <input id="search" class="input-text" value="" placeholder="Search Now" type="search">
+                                <button>
+                                    <i class="la la-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="header-small-mobile">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <div class="mobile-logo">
+                                <a href="index.html">
+                                    <img alt="" src="assets/images/logo/logo-1.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="header-right-wrap">
+                                <div class="cart-wrap common-style">
+                                    <button class="cart-active">
+                                        <i class="la la-shopping-cart"></i>
+                                        <span class="count-style">2 Items</span>
+                                    </button>
+                                    <div class="shopping-cart-content">
+                                        <div class="shopping-cart-top">
+                                            <h4>Your Cart</h4>
+                                            <a class="cart-close" href="#"><i class="la la-close"></i></a>
+                                        </div>
+                                        <ul>
+                                            <li class="single-shopping-cart">
+                                                <div class="shopping-cart-img">
+                                                    <a href="#"><img alt="" src="assets/images/cart/cart-1.jpg"></a>
+                                                    <div class="item-close">
+                                                        <a href="#"><i class="sli sli-close"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="shopping-cart-title">
+                                                    <h4><a href="#">Golden Easy Spot Chair.</a></h4>
+                                                    <span>$99.00</span>
+                                                </div>
+                                                <div class="shopping-cart-delete">
+                                                    <a href="#"><i class="la la-trash"></i></a>
+                                                </div>
+                                            </li>
+                                            <li class="single-shopping-cart">
+                                                <div class="shopping-cart-img">
+                                                    <a href="#"><img alt="" src="assets/images/cart/cart-2.jpg"></a>
+                                                    <div class="item-close">
+                                                        <a href="#"><i class="sli sli-close"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="shopping-cart-title">
+                                                    <h4><a href="#">Golden Easy Spot Chair.</a></h4>
+                                                    <span>$99.00</span>
+                                                </div>
+                                                <div class="shopping-cart-delete">
+                                                    <a href="#"><i class="la la-trash"></i></a>
+                                                </div>
+                                            </li>
+                                            <li class="single-shopping-cart">
+                                                <div class="shopping-cart-img">
+                                                    <a href="#"><img alt="" src="assets/images/cart/cart-3.jpg"></a>
+                                                    <div class="item-close">
+                                                        <a href="#"><i class="sli sli-close"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="shopping-cart-title">
+                                                    <h4><a href="#">Golden Easy Spot Chair.</a></h4>
+                                                    <span>$99.00</span>
+                                                </div>
+                                                <div class="shopping-cart-delete">
+                                                    <a href="#"><i class="la la-trash"></i></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="shopping-cart-bottom">
+                                            <div class="shopping-cart-total">
+                                                <h4>Subtotal <span class="shop-total" id="shop-total">$0.00</span></h4>
+                                            </div>
+                                            <div class="shopping-cart-btn btn-hover default-btn text-center">
+                                                <a class="black-color" href="checkout.html">Continue to Checkout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile-off-canvas">
+                                    <a class="mobile-aside-button" href="#"><i class="la la-navicon la-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mobile-off-canvas-active">
+            <a class="mobile-aside-close"><i class="la la-close"></i></a>
+            <div class="header-mobile-aside-wrap">
+                <div class="mobile-search">
+                    <form class="search-form" action="#">
+                        <input type="text" placeholder="Search entire store…">
+                        <button class="button-search"><i class="la la-search"></i></button>
+                    </form>
+                </div>
+                <div class="mobile-menu-wrap">
+                    <!-- mobile menu start -->
+                    <div class="mobile-navigation">
+                        <!-- mobile menu navigation start -->
+                        <nav>
+                            <ul class="mobile-menu">
+                                <li class="menu-item-has-children"><a href="index.html">Home</a></li>
+
+                                <li class="menu-item-has-children "><a href="shop.html">Shop</a></li>
+
+                                <li class="menu-item-has-children"><a href="about-us.html">About us</a></li>
+
+                                <li class="menu-item-has-children"><a href="contact.html">Contact us</a></li>
+
+                            </ul>
+                        </nav>
+                        <!-- mobile menu navigation end -->
+                    </div>
+                    <!-- mobile menu end -->
+                </div>
+                <div class="mobile-curr-lang-wrap">
+                    <div class="single-mobile-curr-lang">
+                        <a class="mobile-account-active" href="#">My Account <i class="la la-angle-down"></i></a>
+                        <div class="lang-curr-dropdown account-dropdown-active">
+                            <ul>
+                                <li><a href="login-register.html">Login&Register</a></li>
+                                <li><a href="my-account.html">My Account</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-social-wrap">
+                    <a class="facebook" href="#"><i class="ti-facebook"></i></a>
+                    <a class="twitter" href="#"><i class="ti-twitter-alt"></i></a>
+                    <a class="pinterest" href="#"><i class="ti-pinterest"></i></a>
+                    <a class="instagram" href="#"><i class="ti-instagram"></i></a>
+                    <a class="google" href="#"><i class="ti-google"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumb-area bg-img" style="background-image:url(assets/images/bg/breadcrumb.jpg);">
+            <div class="container">
+                <div class="breadcrumb-content text-center">
+                    <h2>My account</h2>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                      </li>
+                        <li class="active">My account </li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+        <!-- my account wrapper start -->
+        <div class="my-account-wrapper pt-100 pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- My Account Page Start -->
+                        <div class="myaccount-page-wrapper">
+                            <!-- My Account Tab Menu Start -->
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="myaccount-tab-menu nav" role="tablist">
+                                        <a href="#dashboad" class="active" data-toggle="tab"><i class="fa fa-dashboard"></i>
+                                            Dashboard</a>
+                                        <a href="#orders" data-toggle="tab" onclick="getOrdersInfoByUid(uid = sessionStorage.getItem('loginUid'))"><i class="fa fa-cart-arrow-down"></i> Orders</a>
+                                        <a href="#address-edit" data-toggle="tab"><i class="fa fa-map-marker"></i> address</a>
+                                        <a href="#account-info" data-toggle="tab"><i class="fa fa-user"></i> Account Details</a>
+                                        <a href="login-register.html" onclick="setLogout()"><i class="fa fa-sign-out" ></i> Logout</a>
+                                    </div>
+                                </div>
+                                <!-- My Account Tab Menu End -->
+                                <!-- My Account Tab Content Start -->
+                                <div class="col-lg-9 col-md-8">
+                                    <div class="tab-content" id="myaccountContent">
+                                        <!-- Single Tab Content Start -->
+                                        <div class="tab-pane fade show active" id="dashboad" role="tabpanel">
+                                            <div class="myaccount-content">
+                                                <h3>Dashboard</h3>
+                                                <div class="welcome" id="welcome">
+<!--                                                    <p>Hello, <strong>Alex Tuntuni</strong> (If Not <strong>Tuntuni !</strong><a href="login-register.html" class="logout"> Logout</a>)</p>-->
+                                                </div>
+
+                                                <p class="mb-0">From your account dashboard. you can easily check & view your recent orders, manage your shipping and billing addresses and edit your password and account details.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Single Tab Content End -->
+                                        <!-- Single Tab Content Start -->
+                                        <div class="tab-pane fade" id="orders" role="tabpanel">
+                                            <div class="myaccount-content">
+                                                <h3>Orders</h3>
+                                                <div class="myaccount-table table-responsive text-center">
+                                                    <table id="order" class="table table-bordered">
+                                                        <thead class="thead-light">
+                                                            <tr>
+                                                                <th>Order id</th>
+                                                                <th>Date</th>
+                                                                <th>Status</th>
+                                                                <th>Total</th>
+                                                                <th>Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                            <tr>
+<!--                                                                <td>1</td>-->
+<!--                                                                <td>Aug 22, 2018</td>-->
+<!--                                                                <td>Pending</td>-->
+<!--                                                                <td>$3000</td>-->
+<!--                                                                <td><a href="order-view.html" class="check-btn sqr-btn ">View</a></td>-->
+                                                            </tr>
+<!--                                                            <tr>-->
+<!--                                                                <td>2</td>-->
+<!--                                                                <td>July 22, 2018</td>-->
+<!--                                                                <td>Approved</td>-->
+<!--                                                                <td>$200</td>-->
+<!--                                                                <td><a href="order-view.html" class="check-btn sqr-btn ">View</a></td>-->
+<!--                                                            </tr>-->
+<!--                                                            <tr>-->
+<!--                                                                <td>3</td>-->
+<!--                                                                <td>June 12, 2017</td>-->
+<!--                                                                <td>On Hold</td>-->
+<!--                                                                <td>$990</td>-->
+<!--                                                                <td><a href="order-view.html" class="check-btn sqr-btn ">View</a></td>-->
+<!--                                                            </tr>-->
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Tab Content End -->
+                                        <!-- Single Tab Content Start -->
+                                        <div class="tab-pane fade" id="address-edit" role="tabpanel">
+                                            <div class="myaccount-content">
+                                                <h3>Billing Address</h3>
+                                                <address id="user_address">
+<!--                                                    <p><strong>Alex Tuntuni</strong></p>-->
+<!--                                                    <p>1355 Market St, Suite 900 <br>-->
+<!--                                                    San Francisco, CA 94103</p>-->
+<!--                                                        <p>Mobile: (123) 456-7890</p>-->
+                                                </address>
+                                                <a href="#" class="check-btn sqr-btn "><i class="fa fa-edit"></i> Edit Address</a>
+                                            </div>
+                                        </div>
+                                        <!-- Single Tab Content End -->
+                                        <!-- Single Tab Content Start -->
+                                        <div class="tab-pane fade" id="account-info" role="tabpanel">
+                                            <div class="myaccount-content">
+                                                <h3>Account Details</h3>
+                                                <div class="account-details-form">
+                                                    <form action="#">
+                                                        <div class="row" id="account_detail">
+                                                           <!-- <div class="col-lg-6">
+                                                                <div class="single-input-item">
+                                                                    <label for="first-name" class="required">First Name</label>
+                                                                    <input type="text" id="first-name" placeholder="fName"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="single-input-item">
+                                                                    <label for="last-name" class="required">Last Name</label>
+                                                                    <input type="text" id="last-name" placeholder="lName"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-input-item">
+                                                            <label for="display-name" class="required">user id</label>
+                                                            <input type="text" id="display-name" placeholder="userid"/>
+                                                        </div>
+                                                        <div class="single-input-item">
+                                                            <label for="email" class="required">Email Address</label>
+                                                            <input type="email" id="email" />-->
+                                                        </div>
+                                                        <fieldset>
+                                                            <legend>Password change</legend>
+                                                            <div class="single-input-item">
+                                                                <label for="current-pwd" class="required">Current Password</label>
+                                                                <input type="password" id="current-pwd" />
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                    <div class="single-input-item">
+                                                                        <label for="new-pwd" class="required">New Password</label>
+                                                                        <input type="password" id="new-pwd" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="single-input-item">
+                                                                        <label for="confirm-pwd" class="required">Confirm Password</label>
+                                                                        <input type="password" id="confirm-pwd" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+                                                        <div class="single-input-item">
+                                                            <button onclick="updateUserInfo(); return false">Save Changes</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div> <!-- Single Tab Content End -->
+                                    </div>
+                                </div> <!-- My Account Tab Content End -->
+                            </div>
+                        </div> <!-- My Account Page End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- my account wrapper end -->
+        <footer class="footer-area section-padding-2 bg-bluegray pt-80">
+            <div class="footer-top bg-gray pt-120 pb-85">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-12 col-sm-6">
+                            <div class="footer-widget mb-30">
+                                <a href="#"><img src="assets/images/logo/logo-1.png" alt="logo"></a>
+                                <div class="footer-social">
+                                    <span>Follow us:</span>
+                                    <ul>
+                                        <li><a href="#"><i class=" ti-facebook "></i></a></li>
+                                        <li><a href="#"><i class=" ti-twitter-alt "></i></a></li>
+                                        <li><a href="#"><i class=" ti-pinterest "></i></a></li>
+                                        <li><a href="#"><i class=" ti-vimeo-alt "></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-12 col-sm-6">
+                            <div class="footer-widget mb-30 footer-mrg-hm1">
+                                <div class="footer-title">
+                                    <h3>Useful Link</h3>
+                                </div>
+                                <div class="footer-list">
+                                    <ul>
+                                        <li><a href="cart.html">Shopping Cat</a></li>
+                                      <li><a href="contact.html">Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-2 col-12 col-sm-6">
+                            <div class="footer-widget mb-30">
+                                <div class="footer-title">
+                                    <h3>About us</h3>
+                                </div>
+                                <div class="footer-list">
+                                    <ul>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="checkout.html">Checkout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+</div>
+                </div>
+            </div>
+    </div>
+    <!-- JS
+============================================ -->
+
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+    <!-- Popper JS -->
+    <script src="assets/js/vendor/popper.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+    <!-- Slick Slider JS -->
+    <script src="assets/js/plugins/countdown.js"></script>
+    <script src="assets/js/plugins/counterup.js"></script>
+    <script src="assets/js/plugins/images-loaded.js"></script>
+    <script src="assets/js/plugins/isotope.js"></script>
+    <script src="assets/js/plugins/instafeed.js"></script>
+    <script src="assets/js/plugins/jquery-ui.js"></script>
+    <script src="assets/js/plugins/jquery-ui-touch-punch.js"></script>
+    <script src="assets/js/plugins/magnific-popup.js"></script>
+    <script src="assets/js/plugins/owl-carousel.js"></script>
+    <script src="assets/js/plugins/scrollup.js"></script>
+    <script src="assets/js/plugins/waypoints.js"></script>
+    <script src="assets/js/plugins/slick.js"></script>
+    <script src="assets/js/plugins/wow.js"></script>
+    <script src="assets/js/plugins/textillate.js"></script>
+    <script src="assets/js/plugins/elevatezoom.js"></script>
+    <script src="assets/js/plugins/sticky-sidebar.js"></script>
+    <script src="assets/js/plugins/smoothscroll.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        let uid = sessionStorage.getItem("loginUid");
+
+        function getOrdersInfoByUid(){
+            $.ajax({
+                type: "POST",
+                url : "/my-account/userOrder",
+                data:{"uid":uid},
+                dataType : "json",
+                timeout:36000,
+                success: function (data) {
+                    if(data.code === 300 ){
+                        alert("不存在账单");
+                        return false;
+                    }
+                    let html = "";
+                    console.log(data);
+
+                    for(var j in data){
+                        console.log(data[j]);
+                        // var $row = $("<tr></tr>");
+                        html += "<tr>";
+                        html += "<td>"+data[j].idBill+"</td>";
+                        html += "<td>"+data[j].date+"</td>";
+                        html += "<td>"+data[j].status+"</td>";
+                        html += "<td>"+data[j].total+"</td>";
+                        html += "<td>"+"<a href='wishlist.html?oid="+data[j].idBill+"&total="+ data[j].total +"' class='check-btn sqr-btn '>View</a></td>";
+
+                        html += "</tr>";
+                    }
+                    // console.log(html);
+                    $("#order tbody").html(html);
+                },
+                error: function (data) {
+                    alert("订单查询失败");
+                }
+            });
+        }
+
+        function getUserinfo(){
+
+            $.ajax({
+                type: "POST",
+                url : "/my-account/userInfo",
+                data:{"uid":uid},
+                dataType : "json",
+                timeout:36000,
+                success: function (data) {
+                    console.log(data[0]);
+                    // console.log(data.Last_Name);
+                    let html = "";
+                    html += "<p>Hello, <strong>";
+                    html += data[0].First_Name + " " + data[0].Last_Name;
+                    html += "</strong> (If Not <strong>";
+                    html += data[0].First_Name;
+                    html += " !</strong><a href=\"login-register.html\" class=\"logout\" onclick=\"setLogout()\"> Logout</a>)</p>";
+                    $("#welcome").html(html);
+
+                    let html1 = "";
+                    html1 += "<p><strong>";
+                    html1 += data[0].First_Name + " " + data[0].Last_Name;
+                    html1 += "</strong></p>";
+                    html1 += "<p>" + data[0].street_address + "<br>";
+                    html1 += data[0].city_address+ "</p>";
+                    html1 += "<p>Mobile:"+ data[0].moblie + "</p>";
+                    $("#user_address").html(html1);
+
+                    let html2 = "";
+                    html2 += "<div class=\"col-lg-6\">";
+                    html2 += "<div class=\"single-input-item\">";
+                    html2 += "<label for=\"first-name\" class=\"required\">First Name</label>";
+                    html2 += "<input type=\"text\" id=\"first-name\" readonly='readonly' value=" + data[0].First_Name +">";
+                    html2 += "</div> </div>";
+                    html2 += "<div class=\"col-lg-6\">";
+                    html2 += "<div class=\"single-input-item\">";
+                    html2 += "<label for=\"first-name\" class=\"required\">Last Name</label>";
+                    html2 += "<input type=\"text\" id=\"last-name\" readonly='readonly' value=" + data[0].Last_Name + ">";
+                    html2 += "</div> </div>";
+                    html2 += "<div class=\"col-lg-6\">";
+                    html2 += "<div class=\"single-input-item\">";
+                    html2 += "<label for=\"email\" class=\"required\">Email Address</label>"
+                    html2 += "<input type=\"text\" id=\"email-input\" readonly='readonly' value=" + data[0].email + ">";
+                    html2 += "</div> </div>"
+                    $("#account_detail").html(html2);
+                },
+                error: function (data) {
+                    alert("用户信息查询失败");
+                }
+            });
+        }
+
+        function updateUserInfo(){
+            let new_pwd = $("#new-pwd").val();
+            let current_pwb = $("#current-pwd").val();
+            let confirm_pwd = $("#confirm-pwd").val();
+
+            console.log(current_pwb);
+            console.log(confirm_pwd);
+
+            if(new_pwd != confirm_pwd){
+                alert("两次密码输入不一致");
+                return false;
+            }
+            $.ajax({
+                type: "POST",
+                url : "/my-account/userEdit",
+                data:{
+                    "uid":uid,
+                    "current_pwb":current_pwb,
+                    "new_pwd":new_pwd,
+                    "city":'San Francisco, CA 94103',
+                    "street":'1355 Market St, Suite 900',
+                    "mobile":'(123) 456-7890',
+                    "email":$("#email-input").val(),
+                    "first_name":$("#first-name").val(),
+                    "last_name":$("#last-name").val()
+                },
+                dataType : "json",
+                timeout:36000,
+                success: function (data) {
+                    alert(data.msg);
+                },
+                error: function (data) {
+                    alert("账户信息查询失败");
+                }
+            });
+        }
+        function setTotalPrice(){
+            document.getElementById("mini-cart-price").innerText = "$"+getCartTotal();
+            document.getElementById("shop-total").innerText = "$"+getCartTotal()+".00";
+        }
+        function setLogout() {
+            sessionStorage.setItem("loginUid",null);
+        }
+
+    </script>
+    <script>getUserinfo();</script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/adjust.js"></script>
+    <script>loadOnlineCart();loadCart();setTotalPrice();</script>
+
+</body>
+
+</html>
