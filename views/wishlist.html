@@ -516,7 +516,7 @@
                 success: function (data) {
                     // console.log(data);
                     if(data.code === 300 ){
-                        alert("不存在订单详情");
+                        // alert("不存在订单详情");
                         return false;
                     }
                     let html = "";
@@ -539,7 +539,7 @@
                     $("#order_table").html(html);
                 },
                 error: function (data) {
-                    alert("订单详情查询失败");
+                    // alert("订单详情查询失败");
                 }
             });
         }

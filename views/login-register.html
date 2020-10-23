@@ -602,19 +602,19 @@
                     console.log(data.body);
                     // window.location.href = "/";
                     if (data.code === 200) {
-                        alert("登录成功");
+                        alert("Welcome!!");
                         console.log("登录成功");
                         sessionStorage.setItem("loginUid", data.uid);
                         sessionStorage.setItem("loginUsername", $("#user-name").val());
                         window.location.href = "/shop.html";
                     } else if (data.code === 300) {
-                        alert("账号不存在，请重新输入！");
+                        alert("Account not exist!!");
                         // window.location.href = "/";
                     } else if (data.code === 400) {
-                        alert("密码有误，请重新输入！");
+                        alert("Wrong Password!!");
                         // window.location.href = "/";
                     } else {
-                        alert("登录出错！");
+                        alert("Login Error！！");
                         // window.location.href = "/";
                     }
                 },
@@ -655,18 +655,18 @@
                 success: function (data, textStatus) {
                     // var dataJson = eval("(" + data + ")");
                     if (data.code === 200) {
-                        alert("注册成功");
+                        alert("Register Successfully!");
                         userId = getLastInsert();
                         sessionStorage.setItem("loginUid", userId);
                         uid = sessionStorage.getItem("loginUid");
                         window.location.href = "/shop";
                     } else if (data.code === 300) {
-                        alert("该账号已存在！");
+                        alert("The account already exists!");
                     } else if (data.code === 400) {
-                        alert("注册失败，请重新注册");
+                        alert("Registration failed. Please re-register!");
                     } else {
                         console.log(data);
-                        alert("注册出错！");
+                        alert("Registration error!");
                     }
                 },
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -680,14 +680,14 @@
          //正则表达式
             var obj = document.getElementById("user-email"); //要验证的对象
             if(obj.value === ""){ //输入不能为空　　　　
-                alert("输入不能为空!");
+                alert("Input cannot be empty!");
                 return false;
             }else if(!reg.test(obj.value)){ //正则验证不通过，格式不对
-                alert("邮箱格式错误!");
+                alert("Email format error!");
                 return false;
             }
             else{
-                alert("邮箱验证通过！");
+                alert("Email verification passed!");
                 return true;
             }
         }

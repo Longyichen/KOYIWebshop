@@ -495,7 +495,7 @@
                                 <div class="footer-list">
                                     <ul>
                                         <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
+                                        <li><a href="checkout.html">Check Out</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -549,7 +549,7 @@
                 timeout:36000,
                 success: function (data) {
                     if(data.code === 300 ){
-                        alert("不存在账单");
+                        alert("No bill!!");
                         return false;
                     }
                     let html = "";
@@ -571,7 +571,7 @@
                     $("#order tbody").html(html);
                 },
                 error: function (data) {
-                    alert("订单查询失败");
+                    alert("Failed Search!!");
                 }
             });
         }
@@ -623,7 +623,7 @@
                     $("#account_detail").html(html2);
                 },
                 error: function (data) {
-                    alert("用户信息查询失败");
+                    alert("Failed Search!!");
                 }
             });
         }
@@ -637,7 +637,7 @@
             console.log(confirm_pwd);
 
             if(new_pwd != confirm_pwd){
-                alert("两次密码输入不一致");
+                alert("Passwords inconsistent!!");
                 return false;
             }
             $.ajax({
@@ -660,7 +660,7 @@
                     alert(data.msg);
                 },
                 error: function (data) {
-                    alert("账户信息查询失败");
+                    alert("Failed Search!!");
                 }
             });
         }
