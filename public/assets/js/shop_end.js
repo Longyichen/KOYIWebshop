@@ -72,7 +72,7 @@ function searchByPrice() {
 
             var productContent_cart_a = document.createElement('a');
             productContent_cart_a.title = "Add To Cart";
-            productContent_cart_a.href = "product-details-"+productList[i].pid;////////////////////
+            productContent_cart_a.href = "product?pid="+productList[i].pid;////////////////////
             productContent_cart_a.innerText = "+ Add To Cart";
             productContent_cart.appendChild(productContent_cart_a);
         }
@@ -153,7 +153,7 @@ function loadShop() {
 
         var productContent_cart_a = document.createElement('a');
         productContent_cart_a.title = "Add To Cart";
-        productContent_cart_a.href = "product-details-"+productList[i].pid;////////////////////"product-details.html"////////////////
+        productContent_cart_a.href = "product?pid="+productList[i].pid;////////////////////"product-details.html"////////////////
         productContent_cart_a.innerText = "+ Add To Cart";
         productContent_cart.appendChild(productContent_cart_a);
     }
@@ -239,7 +239,7 @@ function getCategory(e) {
 
             var productContent_cart_a = document.createElement('a');
             productContent_cart_a.title = "Add To Cart";
-            productContent_cart_a.href = "product-details-"+productList[i].pid;////////////////////
+            productContent_cart_a.href = "product?pid="+productList[i].pid;////////////////////
             productContent_cart_a.innerText = "+ Add To Cart";
             productContent_cart.appendChild(productContent_cart_a);
         }
